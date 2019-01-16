@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ch.pschatzmann</groupId>
 	<artifactId>investor</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<properties>
 		<!-- Use the latest version whenever possible. -->
@@ -78,7 +78,7 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>RELEASE</version>
+			<version>4.5.6</version>
 		</dependency>
 
 		<dependency>
