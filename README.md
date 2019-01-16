@@ -31,6 +31,6 @@ You can add this library with the help of Maven to your project:
 ## Documentation
 
 - Jupyter Tutorial: https://github.com/pschatzmann/Investor-Blogs
-- Javahelp: https://pschatzmann.ch/investor/index.html
+- Javahelp: https://pschatzmann.ch/investor/docs/index.html
 
 
