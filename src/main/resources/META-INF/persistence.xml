@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="stocks-jpa" transaction-type="RESOURCE_LOCAL">
+		<shared-cache-mode>NONE</shared-cache-mode>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://www.pschatzmann.ch:5432/stocks"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="eclipselink.jdbc.read-connections.min" value="0"/>
+			<property name="eclipselink.jdbc.exclusive-connection.mode" value="Always"/>
+			<property name="eclipselink.temporal.mutable" value="true"/>
+			<property name="javax.persistence.jdbc.user" value="pschatzmann"/>
+			<property name="eclipselink.jdbc.exclusive-connection.is-lazy" value="true"/>
+			<property name="eclipselink.jdbc.read-connections.shared" value="true"/>
+			<property name="javax.persistence.schema-generation.create-database-schemas" value="true"/>
+			<property name="eclipselink.jdbc.native-sql" value="false"/>
+			<property name="javax.persistence.jdbc.password" value="sabrina1"/>
+		</properties>
+	</persistence-unit>
+</persistence>

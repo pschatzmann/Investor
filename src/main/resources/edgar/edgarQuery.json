@@ -1,0 +1,20 @@
+{
+    "cols": [                
+               {"fieldName":"year"}                
+    ],
+    "rows": [
+               {"fieldName":"tradingsymbol"}                
+    ],
+    "filter": [ 
+                {"fieldName":"segmentDimension", "filterValues": [""]},
+                {"fieldName":"unitRef", "filterValues": ["USD"]},              
+                {"fieldName":"year", "filterValues": [%year]},              
+                {"fieldName":"country", "filterValues": ["USA"]} , 
+                {"fieldName":"tradingSymbol", "filterValues": [""], "filterEquals":false} , 
+                {"fieldName":"numberOfMonths", "filterValues": ["12"]}  
+                
+    ],
+    "parameters": [%parameters],
+    "topN": 0,
+    "parameterAsPriorityAlternatives": "%asAlternative"
+}

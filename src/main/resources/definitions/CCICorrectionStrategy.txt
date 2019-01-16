@@ -1,0 +1,3 @@
+Developed by Donald Lambert, the Commodity Channel Index (CCI) is a momentum oscillator that can be used to identify a new trend or warn of extreme conditions. This strategy uses weekly CCI to dictate the trading bias when it surges above +100 or plunges below -100, which are key levels noted by Lambert. Once the trading bias is set, daily CCI is used to generate trading signals when it reaches its extremes.
+<a href="http://stockcharts.com/school/doku.php?id=chart_school:trading_strategies:cci_correction">Details can be found in stockcharts</a>
+

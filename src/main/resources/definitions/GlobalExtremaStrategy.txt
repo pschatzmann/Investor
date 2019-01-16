@@ -1,0 +1,1 @@
+This strategy compares the current price to the global extrema over a week. We ar going long if the close price goes below the minimum price. We are going short if the close price goes above the maximum price.

@@ -1,0 +1,1 @@
+We buy the title when the account is opened and hold the stock. This strategy can be used as a baseline to compare the other strategies.

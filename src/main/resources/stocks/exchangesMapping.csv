@@ -1,0 +1,62 @@
+Standard,Yahoo,MarketExchange,QuandlWIKI,Exchange,Country
+AMS, ,AMS,WIKI,American Stock Exchange,United States of America
+BATS, ,-,-,BATS Exchange,United States of America
+CBT,CBT,-,-,Chicago Board of Trade,United States of America
+CME,CME,-,-,Chicago Mercantile Exchange,United States of America
+INDEX, ,INDEX,WIKI,Dow Jones Indexes,United States of America
+NASDAQ, ,NASDAQ,WIKI,NASDAQ Stock Exchange,United States of America
+NYB,NYB,-,-,New York Board of Trade,United States of America
+CMX,CMX,-,-,New York Commodities Exchange,United States of America
+NYM,NYM,-,-,New York Mercantile Exchange,United States of America
+NYSE, ,NYSE,WIKI,New York Stock Exchange,United States of America
+OB,OB,OTCBB,-,OTC Bulletin Board Market,United States of America
+PK,PK,-,-,Pink Sheets,United States of America
+INDEX, ,INDEX,WIKI,S & P Indices,United States of America
+BA,BA,-,-,Buenos Aires Stock Exchange,Argentina
+VI,VI,-,-,Vienna Stock Exchange,Austria
+AX,AX,ASX,-,Australian Stock Exchange,Australia
+SA,SA,BRU,-,BOVESPA - Sao Paolo Stock Exchange,Brazil
+TO,TO,TSX,-,Toronto Stock Exchange,Canada
+V,V,TSXV,-,TSX Venture Exchange,Canada
+SN,SN,-,-,Santiago Stock Exchange,Chile
+SS,SS,-,-,Shanghai Stock Exchange,China
+SZ,SZ,-,-,Shenzhen Stock Exchange,China
+CO,CO,-,-,Copenhagen Stock Exchange,Denmark
+NX,NX,-,-,Euronext,France
+PA,PA,PAR,-,Paris Stock Exchange,France
+BE,BE,-,-,Berlin Stock Exchange,Germany
+BM,BM,-,-,Bremen Stock Exchange,Germany
+DU,DU,-,-,Dusseldorf Stock Exchange,Germany
+F,F,-,-,Frankfurt Stock Exchange,Germany
+HM,HM,-,-,Hamburg Stock Exchange,Germany
+HA,HA,-,-,Hanover Stock Exchange,Germany
+MU,MU,-,-,Munich Stock Exchange,Germany
+SG,SG,-,-,Stuttgart Stock Exchange,Germany
+DE,DE,-,-,XETRA Stock Exchange,Germany
+HK,HK,HKEX,-,Hong Kong Stock Exchange,Hong Kong
+BO,BO,-,-,Bombay Stock Exchange,India
+NS,NS,-,-,National Stock Exchange of India,India
+JK,JK,-,-,Jakarta Stock Exchange,Indonesia
+TA,TA,-,-,Tel Aviv Stock Exchange,Israel
+MI,MI,MLSE,-,Milan Stock Exchange,Italy
+INDEX,,INDEX,-,Nikkei Indices,Japan
+MX,MX,-,-,Mexico Stock Exchange,Mexico
+AS,AS,AMEX,-,Amsterdam Stock Exchange,Netherlands
+NZ,NZ,NZX,-,New Zealand Stock Exchange,New Zealand
+OL,OL,-,-,Oslo Stock Exchange,Norway
+SI,SI,SGX,-,Singapore Stock Exchange,Singapore
+KS,KS,-,-,Korea Stock Exchange,South Korea
+KQ,KQ,-,-,KOSDAQ,South Korea
+BC,BC,-,-,Barcelona Stock Exchange,Spain
+BI,BI,-,-,Bilbao Stock Exchange,Spain
+MF,MF,-,-,Madrid Fixed Income Market,Spain
+MC,MC,-,-,Madrid SE C.A.T.S.,Spain
+MA,MA,-,-,Madrid Stock Exchange,Spain
+ST,ST,-,-,Stockholm Stock Exchange,Sweden
+SW,SW,-,-,Swiss Exchange,Switzerland
+TWO,TWO,-,-,Taiwan OTC Exchange,Taiwan
+TW,TW,-,-,Taiwan Stock Exchange,Taiwan
+INDEX,,INDEX,-,FTSE Indices,United Kingdom
+LSE,L,LSE,-,London Stock Exchange,United Kingdom
+LIS,-,LIS,-,Lisabon Stock Exchange,Portugal
+USMF,-,USMF,-,,

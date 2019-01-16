@@ -1,0 +1,3 @@
+Many trading strategies are based on a process, not a single signal. This process often involves a series of steps that ultimately lead to a signal. Typically, chartists first establish a trading bias or long-term perspective. Second, chartists wait for pullbacks or bounces that will improve the risk-reward ratio. Third, chartists look for a reversal that indicates a subsequent upturn or downturn in price. The strategy put forth here uses moving average to define the trend, the Stochastic Oscillator to identify corrections within that trend and the MACD-Histogram to signal short-term reversals. It is a complete strategy based on a three step process.
+
+http://stockcharts.com/school/doku.php?id=chart_school:trading_strategies:moving_momentum

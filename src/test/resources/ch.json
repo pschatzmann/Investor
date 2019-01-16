@@ -1,0 +1,2677 @@
+[ {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 7,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 24.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 139717.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 71384.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1602.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 171364.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : -26232.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 18.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 40.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 6.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 66.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 35.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 139717.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 39717.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 5435.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 17.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 17.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 31647.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 165949.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0011607683CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "LongCCIPeriod" : {
+        "value" : 200,
+        "range" : {
+          "min" : 100,
+          "max" : 300
+        }
+      },
+      "ShortCCIPeriod" : {
+        "value" : 5,
+        "range" : {
+          "min" : 1,
+          "max" : 100
+        }
+      },
+      "Signal" : {
+        "value" : 100,
+        "range" : {
+          "min" : 90,
+          "max" : 110
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 16.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 107288.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1751.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 119395.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 29145.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 29.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 640.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 61.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 128965.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 28965.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 15.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 12108.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 99820.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0008531045CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "CCICorrectionStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 7,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 24.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 115286.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 27629.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 334.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 118494.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 29.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 19.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 119164.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 32.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 58.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 119164.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 19164.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 8465.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 8.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 29.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 3208.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 119164.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0011693600CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 34.0,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 29.0,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 19.0,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 16.0,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 55.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 104643.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 11130.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 853.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 117257.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 4859.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 16.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 26.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 115514.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 15514.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 475.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 7.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 12614.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 110655.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0118530366CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : true
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 7,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 94.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 109956.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 22513.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 822.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 121688.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : -937.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 26.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 14.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 24.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 51.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 114291.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 14291.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 7285.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 6.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 25.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 11733.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 115228.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0028422100CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 111.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 96394.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 13906.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1605.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 120182.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 13.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 113496.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 27.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 113496.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 13496.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 410.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 7.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 23788.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 113496.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0003583256CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 20.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 100753.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 614.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 106350.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 13059.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 13.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 22.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 112879.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 12879.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 6.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 5597.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 99820.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0005059438CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 70.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 89194.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 796.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 103684.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 12880.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 13.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 22.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 112700.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 12700.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 14490.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 99820.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0009062099CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "LongCCIPeriod" : {
+        "value" : 200,
+        "range" : {
+          "min" : 100,
+          "max" : 300
+        }
+      },
+      "ShortCCIPeriod" : {
+        "value" : 5,
+        "range" : {
+          "min" : 1,
+          "max" : 100
+        }
+      },
+      "Signal" : {
+        "value" : 100,
+        "range" : {
+          "min" : 90,
+          "max" : 110
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 104.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 96622.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 613.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 100312.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 12669.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 12.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 67.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 21.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 112489.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 12489.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 3690.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 99820.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0004647951CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "CCICorrectionStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "LongCCIPeriod" : {
+        "value" : 200,
+        "range" : {
+          "min" : 100,
+          "max" : 300
+        }
+      },
+      "ShortCCIPeriod" : {
+        "value" : 5,
+        "range" : {
+          "min" : 1,
+          "max" : 100
+        }
+      },
+      "Signal" : {
+        "value" : 100,
+        "range" : {
+          "min" : 90,
+          "max" : 110
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 160.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 108231.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 11701.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 867.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 126479.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 529.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 12.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 44.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 20.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 111755.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 11755.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 475.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 18248.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 111226.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0130293662CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "CCICorrectionStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 24.0,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 29.0,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 13.0,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 7.0,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 193.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 98320.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 4146.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1155.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 113993.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 8568.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 6.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 11.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 17.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 19.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 11.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 111149.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 11149.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 1565.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 15673.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 102581.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0006372897CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : true
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 7,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 96.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 101109.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 16861.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 866.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 118638.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 22.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 110461.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 17.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 44.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 110461.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 10461.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 6400.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 22.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 17530.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 110461.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0012530207CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "RSIPeriod" : {
+        "value" : 2,
+        "range" : {
+          "min" : 1,
+          "max" : 5
+        }
+      },
+      "LongSMAPeriod" : {
+        "value" : 200,
+        "range" : {
+          "min" : 100,
+          "max" : 300
+        }
+      },
+      "ShortSMAPeriod" : {
+        "value" : 5,
+        "range" : {
+          "min" : 2,
+          "max" : 10
+        }
+      },
+      "ExitLimit" : {
+        "value" : 95,
+        "range" : {
+          "min" : 85,
+          "max" : 98
+        }
+      },
+      "EntryLimit" : {
+        "value" : 5,
+        "range" : {
+          "min" : 2,
+          "max" : 10
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 215.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 54294.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : -28914.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 3224.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 103813.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 40046.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 18.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 7.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 110336.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 10336.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 795.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 49519.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 70291.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0007036830CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "RSI2Strategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 17.0,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 13.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 102615.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 11666.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 592.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 112045.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 7.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 109691.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 16.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 14.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 109691.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 9691.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 1975.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 7.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 9430.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 109691.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0001752309CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : true
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 155.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 103678.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 10790.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 694.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 114804.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : -536.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 10.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 364.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 16.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 109574.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 9574.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 680.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 11126.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 110110.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0022427626CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 144.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 103396.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 9598.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 631.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 112429.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 9.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 109393.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 16.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 109393.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 9393.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 205.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 9034.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 109393.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0100837282CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "RSIPeriod" : {
+        "value" : 2,
+        "range" : {
+          "min" : 1,
+          "max" : 5
+        }
+      },
+      "LongSMAPeriod" : {
+        "value" : 200,
+        "range" : {
+          "min" : 100,
+          "max" : 300
+        }
+      },
+      "ShortSMAPeriod" : {
+        "value" : 5,
+        "range" : {
+          "min" : 2,
+          "max" : 10
+        }
+      },
+      "ExitLimit" : {
+        "value" : 95,
+        "range" : {
+          "min" : 85,
+          "max" : 98
+        }
+      },
+      "EntryLimit" : {
+        "value" : 5,
+        "range" : {
+          "min" : 2,
+          "max" : 10
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 101285.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 5547.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1234.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 115935.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 4352.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 9.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 329.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 18.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 5.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 109129.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 9129.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 770.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 14650.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 104777.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0012949464CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "RSI2Strategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 7,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 85.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 101865.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 17082.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 768.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 120179.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 28.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 9.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 108912.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 15.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 56.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 108912.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 8912.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 8170.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 28.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 18314.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 108912.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0010702154CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "SignalEMA" : {
+        "value" : 18,
+        "range" : {
+          "min" : 16,
+          "max" : 20
+        }
+      },
+      "LongEMAPeriod" : {
+        "value" : 26,
+        "range" : {
+          "min" : 20,
+          "max" : 40
+        }
+      },
+      "EntrySignal" : {
+        "value" : 20,
+        "range" : {
+          "min" : 10,
+          "max" : 30
+        }
+      },
+      "ShortEMAPeriod" : {
+        "value" : 9,
+        "range" : {
+          "min" : 1,
+          "max" : 20
+        }
+      },
+      "StochasticOscillatorKIndicator" : {
+        "value" : 14,
+        "range" : {
+          "min" : 7,
+          "max" : 21
+        }
+      },
+      "ExitSignal" : {
+        "value" : 80,
+        "range" : {
+          "min" : 70,
+          "max" : 90
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 164.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 102494.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 1002.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 125892.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 9073.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 9.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 214.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 15.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 108893.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 8893.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 180.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 4.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 23398.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 99820.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0011029946CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "MovingMomentumStrategy",
+  "optimized" : false
+}, {
+  "input" : {
+    "parameters" : {
+      "BuyFactor" : {
+        "value" : 1.004,
+        "range" : {
+          "min" : 1.001,
+          "max" : 5.0
+        }
+      },
+      "NumberOfTicks" : {
+        "value" : 78.0,
+        "range" : {
+          "min" : 1,
+          "max" : 500
+        }
+      },
+      "SellFactor" : {
+        "value" : 0.996,
+        "range" : {
+          "min" : 0.005,
+          "max" : 0.999
+        }
+      }
+    }
+  },
+  "result" : {
+    "parameters" : {
+      "MaxDrawDownNumberOfDays" : {
+        "value" : 578.0,
+        "range" : null
+      },
+      "MaxDrawDownLowValue" : {
+        "value" : 87227.0,
+        "range" : null
+      },
+      "RealizedGains" : {
+        "value" : 7841.0,
+        "range" : null
+      },
+      "NumberOfTradedStocks" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "AbsoluteReturnStdDev" : {
+        "value" : 604.0,
+        "range" : null
+      },
+      "MaxDrawDownHighValue" : {
+        "value" : 100000.0,
+        "range" : null
+      },
+      "UnrealizedGains" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfBuys" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "ReturnPercent" : {
+        "value" : 8.0,
+        "range" : null
+      },
+      "Cash" : {
+        "value" : 107636.0,
+        "range" : null
+      },
+      "AbsoluteReturnAvaragePerDay" : {
+        "value" : 13.0,
+        "range" : null
+      },
+      "SharpeRatio" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "NumberOfTrades" : {
+        "value" : 2.0,
+        "range" : null
+      },
+      "ActualValue" : {
+        "value" : 107636.0,
+        "range" : null
+      },
+      "ReturnPurcentStdDev" : {
+        "value" : 0.0,
+        "range" : null
+      },
+      "AbsoluteReturn" : {
+        "value" : 7636.0,
+        "range" : null
+      },
+      "TotalFees" : {
+        "value" : 205.0,
+        "range" : null
+      },
+      "ReturnPercentAnualized" : {
+        "value" : 3.0,
+        "range" : null
+      },
+      "NumberOfCashTransfers" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "NumberOfSells" : {
+        "value" : 1.0,
+        "range" : null
+      },
+      "MaxDrawDownPercent" : {
+        "value" : 12773.0,
+        "range" : null
+      },
+      "PurchasedValue" : {
+        "value" : 107636.0,
+        "range" : null
+      }
+    }
+  },
+  "stockID" : {
+    "ticker" : "CH0013841017CHF",
+    "exchange" : "SIX"
+  },
+  "strategyName" : "GlobalExtremaStrategy",
+  "optimized" : true
+} ]
