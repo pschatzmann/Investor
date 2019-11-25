@@ -1,6 +1,6 @@
 package ch.pschatzmann.stocks.ta4j.indicator;
 
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.CachedIndicator;
 import org.ta4j.core.num.Num;
 
@@ -12,9 +12,9 @@ import org.ta4j.core.num.Num;
  */
 public class VolumeIndicator extends CachedIndicator<Num> implements IIndicator<Num> {
 	private static final long serialVersionUID = 1L;
-	private TimeSeries series;
+	private BarSeries series;
 
-	public VolumeIndicator(TimeSeries series) {
+	public VolumeIndicator(BarSeries series) {
 		super(series);
 		this.series = series;
 	}

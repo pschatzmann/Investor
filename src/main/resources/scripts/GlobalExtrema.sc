@@ -19,10 +19,10 @@ def calculate(timeSeries : TimeSeries) : NamedStrategy = {
 	
 	val closePrices = new ClosePriceIndicator(timeSeries);
 	// Getting the max price over the past week
-	val maxPrices = new MaxPriceIndicator(timeSeries);
+	val maxPrices = new HighPriceIndicator(timeSeries);
 	val weekMaxPrice = new HighestValueIndicator(maxPrices, 7);
 	// Getting the min price over the past week
-	val minPrices = new MinPriceIndicator(timeSeries);
+	val minPrices = new LowPriceIndicator(timeSeries);
 	val weekMinPrice = new LowestValueIndicator(minPrices, 7);
 	// Going long if the close price goes below the min price
 	val downWeek = new MultiplierIndicator(weekMinPrice, 1.004);

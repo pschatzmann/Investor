@@ -20,9 +20,6 @@ import ch.pschatzmann.stocks.utils.Streams;
  *
  */
 public class MarketUniverse implements IUniverse, Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private URL file;
 	private String exchangeRegex = ".*";
@@ -30,7 +27,7 @@ public class MarketUniverse implements IUniverse, Serializable {
 
 	public MarketUniverse() {
 		try {
-			this.file = new URL(Context.getProperty("MarketArchiveURL","https://pschatzmann.ch") + "/stocks-data/stocks.csv");
+			this.file = new URL(Context.getPropertyMandatory("MarketArchiveURL") + "/stocks-data/stocks.csv");
 		} catch (MalformedURLException e) {
 			throw new RuntimeException(e);
 		}

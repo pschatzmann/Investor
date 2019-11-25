@@ -6,7 +6,7 @@ import java.util.List;
 import org.ta4j.core.Indicator;
 import org.ta4j.core.Rule;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.SMAIndicator;
 import org.ta4j.core.indicators.helpers.ClosePriceIndicator;
 import org.ta4j.core.indicators.helpers.HighestValueIndicator;
@@ -45,7 +45,7 @@ public class BuyOnUpAfterDown extends CommonTradingStrategy  {
 	}
 
 	@Override
-	public Strategy buildStrategy(TimeSeries timeSeries) {
+	public Strategy buildStrategy(BarSeries timeSeries) {
 		Indicator closePrice = new ClosePriceIndicator(timeSeries);
 		PriceHistoryIndicator yesterday = new PriceHistoryIndicator(timeSeries,-1);
 		Indicator movingAverage = new SMAIndicator(closePrice,this.getInteger(InputParameterName.NumberOfTicks));

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.ta4j.core.Bar;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 
 import ch.pschatzmann.stocks.Context;
 import ch.pschatzmann.stocks.IStockRecord;
@@ -64,7 +64,7 @@ public class StockDataArray implements Serializable {
 		}
 	}
 
-	public StockDataArray(TimeSeries series) {
+	public StockDataArray(BarSeries series) {
 		int size = series.getBarCount();
 		dates = new Date[size];
 		datesFormatted = new String[size];
@@ -72,8 +72,8 @@ public class StockDataArray implements Serializable {
 			Bar rec = series.getBar(j);
 			values[FieldName.Open.ordinal()][j] = rec.getOpenPrice().doubleValue();
 			values[FieldName.Closing.ordinal()][j] = rec.getClosePrice().doubleValue();
-			values[FieldName.Low.ordinal()][j] = rec.getMinPrice().doubleValue();
-			values[FieldName.High.ordinal()][j] = rec.getMaxPrice().doubleValue();
+			values[FieldName.Low.ordinal()][j] = rec.getLowPrice().doubleValue();
+			values[FieldName.High.ordinal()][j] = rec.getHighPrice().doubleValue();
 			values[FieldName.Volume.ordinal()][j] = rec.getVolume().doubleValue();
 			dates[j] = Date.from(rec.getEndTime().toInstant());
 			datesFormatted[j] = Context.format(dates[j]);

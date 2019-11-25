@@ -60,8 +60,8 @@ public class HistoricValues implements Serializable, Name {
 
 	public HistoricValues(Indicator<Num> indicator, String name) {
 		this.name = name;
-		this.values = IntStream.range(0, indicator.getTimeSeries().getBarCount())
-				.mapToObj(i -> new HistoricValue(Context.date(indicator.getTimeSeries().getBar(i).getEndTime()), indicator.getValue(i).doubleValue()))
+		this.values = IntStream.range(0, indicator.getBarSeries().getBarCount())
+				.mapToObj(i -> new HistoricValue(Context.date(indicator.getBarSeries().getBar(i).getEndTime()), indicator.getValue(i).doubleValue()))
 				.filter(hv -> hv.getDate()!=null)
 				//.filter(hv -> !hv.getValue().isNaN() && !hv.getValue().isInfinite())
 				.collect(Collectors.toList());

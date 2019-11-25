@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.ta4j.core.Bar;
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.CachedIndicator;
 import org.ta4j.core.num.Num;
 
@@ -32,13 +32,13 @@ public class OffsetIndicator extends CachedIndicator<Num> implements IIndicator<
 	}
 	
 	public OffsetIndicator(Indicator<Num> indicator, int periodsOffset, Num defaultNA) {
-		super(setupTimeSeries(indicator.getTimeSeries(), periodsOffset));
+		super(setupBarSeries(indicator.getBarSeries(), periodsOffset));
 		this.periods = periodsOffset;
 		this.indicator = indicator;
 		this.na = defaultNA;
 	}
 
-	protected static TimeSeries setupTimeSeries(TimeSeries timeSeries, int periodsOffset) {
+	protected static BarSeries setupBarSeries(BarSeries timeSeries, int periodsOffset) {
 		List<Bar> bars = new ArrayList(timeSeries.getBarData());
 		Date date = periodsOffset<0 ? Context.date(bars.get(bars.size()-1).getEndTime()):Context.date(bars.get(0).getEndTime());
 		if (periodsOffset<0) {
@@ -59,7 +59,7 @@ public class OffsetIndicator extends CachedIndicator<Num> implements IIndicator<
 	@Override
 	protected Num calculate(int index) {
 		int pos = index+periods;
-		if (pos>=0 && pos < this.indicator.getTimeSeries().getBarCount()) {
+		if (pos>=0 && pos < this.indicator.getBarSeries().getBarCount()) {
 			return this.indicator.getValue(pos);				
 		}
 		return na;

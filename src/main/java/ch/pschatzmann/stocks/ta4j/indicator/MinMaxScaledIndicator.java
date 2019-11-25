@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.stocks.Context;
@@ -43,7 +43,7 @@ public class MinMaxScaledIndicator implements IIndicator<Num> , Name {
 		this.indicator = indicator;
 		this.scaler = new MinMaxScaler(min, max);
 		this.name = IndicatorUtils.getName(indicator)+"-MinMaxScaled";
-		List<Double> values = IntStream.range(0, indicator.getTimeSeries().getBarCount())
+		List<Double> values = IntStream.range(0, indicator.getBarSeries().getBarCount())
 				.mapToObj(pos -> indicator.getValue(pos).doubleValue())
 				.collect(Collectors.toList());	
 		scaler.setValues(values);
@@ -55,8 +55,8 @@ public class MinMaxScaledIndicator implements IIndicator<Num> , Name {
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
-		return this.indicator.getTimeSeries();
+	public BarSeries getBarSeries() {
+		return this.indicator.getBarSeries();
 	}
 	
 	@Override
@@ -85,7 +85,7 @@ public class MinMaxScaledIndicator implements IIndicator<Num> , Name {
 	
 	public List<Number> getValues() {
 		List<Number> result = new ArrayList();
-		for (int j=0;j<indicator.getTimeSeries().getBarCount();j++) {
+		for (int j=0;j<indicator.getBarSeries().getBarCount();j++) {
 			result.add(this.getValue(j).doubleValue());
 		}
 		return result;

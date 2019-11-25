@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -104,6 +105,7 @@ public class TestUniverse {
 		LOG.info("{}",fu.list().stream().collect(Collectors.toList()));
 	}
 
+	@Ignore
 	@Test
 	public void testQuandlWIKI() throws Exception {
 		LOG.info("testQuandlWIKI");
@@ -220,6 +222,7 @@ public class TestUniverse {
 
 	}
 	
+	@Ignore
 	@Test
 	public void testNASDQ() throws IOException, UniverseException {
 		IUniverse result = new NasdaqUniverse();
@@ -228,6 +231,7 @@ public class TestUniverse {
 		Assert.assertFalse(result.isEmpty());
 	}
 
+	@Ignore
 	@Test
 	public void testNYSE() throws IOException, UniverseException {
 		IUniverse result = new NyseUniverse();

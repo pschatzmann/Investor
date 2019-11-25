@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.trading.rules.BooleanRule;
 
 import ch.pschatzmann.stocks.IStockData;
@@ -35,7 +35,7 @@ public class BuyAndHoldStrategy extends CommonTradingStrategy  {
 	}
 
 	@Override
-	public Strategy buildStrategy(TimeSeries timeSeries) {
+	public Strategy buildStrategy(BarSeries timeSeries) {
 		return new NamedStrategy(new BooleanRule(true), new BooleanRule(false),"BuyAndHoldStrategy");
 	}
 

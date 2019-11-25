@@ -46,8 +46,8 @@ public class StockRecord implements IStockRecord, Serializable  {
 	public StockRecord(Bar tick, IStockID parent, int index) {
 		this.date = Date.from(tick.getEndTime().toInstant());
 		this.open = Context.toDouble(tick.getOpenPrice());
-		this.low = Context.toDouble(tick.getMinPrice());
-		this.high = Context.toDouble(tick.getMaxPrice());
+		this.low = Context.toDouble(tick.getLowPrice());
+		this.high = Context.toDouble(tick.getHighPrice());
 		this.closing = Context.toDouble(tick.getClosePrice());
 		this.volume = Context.toDouble(tick.getVolume());
 		this.index = index;

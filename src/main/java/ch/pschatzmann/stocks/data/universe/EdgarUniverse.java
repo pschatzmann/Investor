@@ -197,7 +197,7 @@ public class EdgarUniverse implements IUniverse {
 			Boolean alt) throws IOException, UnsupportedEncodingException, ClientProtocolException {
 		String jsonQuery = getQuery(yearInfo, count, queryName, parameters, alt);
 		HttpClient client = HttpClientBuilder.create().build();
-		HttpPost request = new HttpPost("https://pschatzmann.ch/edgar/db/values");
+		HttpPost request = new HttpPost("http://pschatzmann.ch/edgar/db/values");
 		StringEntity params = new StringEntity(jsonQuery);
 		request.addHeader("content-type", "application/json");
 		request.addHeader("Accept", "text/plain");

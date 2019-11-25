@@ -7,12 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ta4j.core.Rule;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.helpers.ClosePriceIndicator;
 import org.ta4j.core.indicators.helpers.HighestValueIndicator;
 import org.ta4j.core.indicators.helpers.LowestValueIndicator;
-import org.ta4j.core.indicators.helpers.MaxPriceIndicator;
-import org.ta4j.core.indicators.helpers.MinPriceIndicator;
+import org.ta4j.core.indicators.helpers.HighPriceIndicator;
+import org.ta4j.core.indicators.helpers.LowPriceIndicator;
 import org.ta4j.core.indicators.helpers.MultiplierIndicator;
 import org.ta4j.core.trading.rules.OverIndicatorRule;
 import org.ta4j.core.trading.rules.UnderIndicatorRule;
@@ -47,7 +47,7 @@ public class GlobalExtremaStrategy extends CommonTradingStrategy {
 	 * @return a global extrema strategy
 	 */
 	@Override
-	public Strategy buildStrategy(TimeSeries series) {
+	public Strategy buildStrategy(BarSeries series) {
 
 		ClosePriceIndicator closePrices = new ClosePriceIndicator(series);
 		int tickCount = getParameters().input().getInteger(InputParameterName.NumberOfTicks);
@@ -60,10 +60,10 @@ public class GlobalExtremaStrategy extends CommonTradingStrategy {
 		}
 
 		// Getting the max price over the past week
-		MaxPriceIndicator maxPrices = new MaxPriceIndicator(series);
+		HighPriceIndicator maxPrices = new HighPriceIndicator(series);
 		HighestValueIndicator weekMaxPrice = new HighestValueIndicator(maxPrices, tickCount);
 		// Getting the min price over the past week
-		MinPriceIndicator minPrices = new MinPriceIndicator(series);
+		LowPriceIndicator minPrices = new LowPriceIndicator(series);
 		LowestValueIndicator weekMinPrice = new LowestValueIndicator(minPrices, tickCount);
 
 		// Going long if the close price goes below the min price

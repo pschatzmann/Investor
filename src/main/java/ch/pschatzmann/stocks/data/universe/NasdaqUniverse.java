@@ -25,6 +25,7 @@ import ch.pschatzmann.stocks.errors.UniverseException;
  * @author pschatzmann
  *
  */
+@Deprecated
 public class NasdaqUniverse implements IUniverse {
 	private List<IStockID> result;
 

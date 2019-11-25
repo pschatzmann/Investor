@@ -7,7 +7,7 @@ import java.util.function.ToDoubleBiFunction;
 import java.util.function.ToDoubleFunction;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.CachedIndicator;
 import org.ta4j.core.num.Num;
 
@@ -55,7 +55,7 @@ public class FunctionalIndicator extends CachedIndicator<Num> implements Seriali
 	 * @param nan
 	 */
 	public FunctionalIndicator(Indicator<Num> i1, DoubleUnaryOperator function, Double nan){
-		super((TimeSeries)i1.getTimeSeries());
+		super((BarSeries)i1.getBarSeries());
 		this.i1 = i1;
 		this.i2 = null;
 		this.oneIndicatorFunction = function;

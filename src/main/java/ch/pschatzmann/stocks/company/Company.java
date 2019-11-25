@@ -14,6 +14,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import ch.pschatzmann.stocks.Context;
 import ch.pschatzmann.stocks.cache.RedisCache;
 
 /**
@@ -97,7 +98,7 @@ public class Company {
 			result = cache.get(symbol);
 		}
 		if (result==null) {
-			String url = "https://api.iextrading.com/1.0/stock/"+symbol+"/company";
+			String url = "https://cloud.iexapis.com/stable/stock/"+symbol+"/company?token="+this.getApiKey();
 			LOG.info(url);
 			ObjectMapper mapper = new ObjectMapper();
 			Map<String,String> map = mapper.readValue(new URL(url), Map.class);
@@ -116,6 +117,11 @@ public class Company {
 	}
 	
 	
+	private String getApiKey() {
+		return Context.getPropertyMandatory("IEXAPIKey");
+	}
+
+
 	public String toString() {
 		return this.companyName;
 	}

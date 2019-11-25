@@ -25,7 +25,7 @@ import ch.pschatzmann.stocks.StockRecord;
 public class TiingoReader implements IReaderEx {
 	private static final Logger LOG = LoggerFactory.getLogger(TiingoReader.class);
 	private DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-	private String token = Context.getProperty("TiingoToken", "2675ab4e69f634eeb92e410a486fce2dbb47dbd5");
+	private String token = Context.getPropertyMandatory("TiingoToken");
 	private ObjectMapper objectMapper = new ObjectMapper();
 
 	public TiingoReader() {

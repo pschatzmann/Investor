@@ -2,7 +2,7 @@ package ch.pschatzmann.analysis.criteria;
 
 import java.io.Serializable;
 
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.Trade;
 import org.ta4j.core.TradingRecord;
 import org.ta4j.core.analysis.criteria.AbstractAnalysisCriterion;
@@ -27,7 +27,7 @@ public class TotalReturnCriterion extends AbstractAnalysisCriterion implements S
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public Num calculate(TimeSeries series, TradingRecord tradingRecord) {
+	public Num calculate(BarSeries series, TradingRecord tradingRecord) {
 		Num value = Context.number(0.0);
 		for (Trade trade : tradingRecord.getTrades()) {
 			value.plus(calculateProfit(series, trade));
@@ -36,7 +36,7 @@ public class TotalReturnCriterion extends AbstractAnalysisCriterion implements S
 	}
 
 	@Override
-	public Num calculate(TimeSeries series, Trade trade) {
+	public Num calculate(BarSeries series, Trade trade) {
 		return calculateProfit(series, trade);
 	}
 
@@ -54,7 +54,7 @@ public class TotalReturnCriterion extends AbstractAnalysisCriterion implements S
 	 *            a trade
 	 * @return the profit of the trade
 	 */
-	private Num calculateProfit(TimeSeries series, Trade trade) {
+	private Num calculateProfit(BarSeries series, Trade trade) {
 		Num profit = Context.number(0.0);
 		if (trade.isClosed()) {
 			Num exitClosePrice = series.getBar(trade.getExit().getIndex()).getClosePrice();

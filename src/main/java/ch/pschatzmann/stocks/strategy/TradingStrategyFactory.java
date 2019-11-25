@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 
 import ch.pschatzmann.stocks.Context;
 import ch.pschatzmann.stocks.IStockData;
@@ -98,7 +98,7 @@ public class TradingStrategyFactory {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			public Strategy buildStrategy(TimeSeries timeSeries) {
+			public Strategy buildStrategy(BarSeries timeSeries) {
 				return strategy;
 			}			
 		};		

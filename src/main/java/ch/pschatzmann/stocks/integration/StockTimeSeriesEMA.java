@@ -2,12 +2,12 @@ package ch.pschatzmann.stocks.integration;
 
 import java.time.ZonedDateTime;
 
-import org.ta4j.core.BaseTimeSeries;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BaseBarSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.EMAIndicator;
 import org.ta4j.core.indicators.helpers.ClosePriceIndicator;
-import org.ta4j.core.indicators.helpers.MaxPriceIndicator;
-import org.ta4j.core.indicators.helpers.MinPriceIndicator;
+import org.ta4j.core.indicators.helpers.HighPriceIndicator;
+import org.ta4j.core.indicators.helpers.LowPriceIndicator;
 import org.ta4j.core.indicators.helpers.OpenPriceIndicator;
 import org.ta4j.core.num.Num;
 
@@ -21,17 +21,17 @@ import ch.pschatzmann.stocks.ta4j.indicator.VolumeIndicator;
  *
  */
 
-public class StockTimeSeriesEMA extends BaseTimeSeries {
+public class StockTimeSeriesEMA extends BaseBarSeries {
 	private static final long serialVersionUID = 1L;
 
-	private StockTimeSeriesEMA(TimeSeries series, int periods) {
+	private StockTimeSeriesEMA(BarSeries series, int periods) {
 		super(series.getName() + "-EMA-" + periods, Context.getNumberImplementation());
 
 		if (periods > 0) {
 			OpenPriceIndicator open = new OpenPriceIndicator(series);
 			ClosePriceIndicator close = new ClosePriceIndicator(series);
-			MaxPriceIndicator max = new MaxPriceIndicator(series);
-			MinPriceIndicator min = new MinPriceIndicator(series);
+			HighPriceIndicator max = new HighPriceIndicator(series);
+			LowPriceIndicator min = new LowPriceIndicator(series);
 			VolumeIndicator vol = new VolumeIndicator(series);
 			EMAIndicator openEmea = new EMAIndicator(open, periods);
 			EMAIndicator closeEmea = new EMAIndicator(close, periods);
@@ -39,8 +39,8 @@ public class StockTimeSeriesEMA extends BaseTimeSeries {
 			EMAIndicator maxEmea = new EMAIndicator(max, periods);
 			EMAIndicator volEmea = new EMAIndicator(vol, periods);
 
-			for (int j = 0; j < close.getTimeSeries().getBarCount(); j++) {
-				ZonedDateTime time = close.getTimeSeries().getBar(j).getEndTime();
+			for (int j = 0; j < close.getBarSeries().getBarCount(); j++) {
+				ZonedDateTime time = close.getBarSeries().getBar(j).getEndTime();
 				Num value = closeEmea.getValue(j);
 				if (!value.isNaN() && value.doubleValue() >= 0.0) {
 					StockBar bar = new StockBar(time, openEmea.getValue(j), maxEmea.getValue(j), minEmea.getValue(j),
@@ -54,7 +54,7 @@ public class StockTimeSeriesEMA extends BaseTimeSeries {
 
 	}
 
-	public static TimeSeries create(TimeSeries series, int periods) {
+	public static BarSeries create(BarSeries series, int periods) {
 		return new StockTimeSeriesEMA(series, periods);
 	}
 	

@@ -27,7 +27,7 @@ import java.util.List;
 
 import org.ta4j.core.Rule;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.CCIIndicator;
 import org.ta4j.core.num.Num;
 import org.ta4j.core.trading.rules.OverIndicatorRule;
@@ -65,7 +65,7 @@ public class CCICorrectionStrategy extends CommonTradingStrategy {
 	 * @return a CCI correction strategy
 	 */
 	@Override
-	public Strategy buildStrategy(TimeSeries series) {
+	public Strategy buildStrategy(BarSeries series) {
 		if (series == null) {
 			throw new IllegalArgumentException("Series cannot be null");
 		}

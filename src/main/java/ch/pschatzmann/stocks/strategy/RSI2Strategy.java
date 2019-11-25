@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.ta4j.core.Rule;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.RSIIndicator;
 import org.ta4j.core.indicators.SMAIndicator;
 import org.ta4j.core.indicators.helpers.ClosePriceIndicator;
@@ -47,7 +47,7 @@ public class RSI2Strategy extends CommonTradingStrategy  {
      * @return a 2-period RSI strategy
      */
     @Override
-    public Strategy buildStrategy(TimeSeries series) {
+    public Strategy buildStrategy(BarSeries series) {
         if (series == null) {
             throw new IllegalArgumentException("Series cannot be null");
         }

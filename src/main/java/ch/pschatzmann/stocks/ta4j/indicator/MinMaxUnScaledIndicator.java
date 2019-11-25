@@ -1,21 +1,10 @@
 package ch.pschatzmann.stocks.ta4j.indicator;
 
-import java.time.Duration;
-import java.time.ZonedDateTime;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-import org.ta4j.core.Bar;
-import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
 import org.ta4j.core.num.Num;
 
-import ch.pschatzmann.stocks.Context;
-import ch.pschatzmann.stocks.integration.StockBar;
 import ch.pschatzmann.stocks.utils.IScaler;
 import ch.pschatzmann.stocks.utils.MinMaxScaler;
 

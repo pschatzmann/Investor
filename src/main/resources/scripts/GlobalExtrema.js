@@ -18,10 +18,10 @@ function execute(series) {
 	with (imports) {
 		closePrices = new ClosePriceIndicator(series);
 		// Getting the max price over the past week
-		maxPrices = new MaxPriceIndicator(series);
+		maxPrices = new HighPriceIndicator(series);
 		weekMaxPrice = new HighestValueIndicator(maxPrices, 7);
 		// Getting the min price over the past week
-		minPrices = new MinPriceIndicator(series);
+		minPrices = new LowPriceIndicator(series);
 		weekMinPrice = new LowestValueIndicator(minPrices, 7);
 		// Going long if the close price goes below the min price
 		downWeek = new MultiplierIndicator(weekMinPrice, 1.004);

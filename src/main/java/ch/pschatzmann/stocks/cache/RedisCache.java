@@ -24,7 +24,7 @@ public class RedisCache implements ICache {
 
 	public RedisCache() {
 		Config config = new Config();
-		config.useSingleServer().setAddress(Context.getProperty("RedisCacheAddress", "redis://192.168.1.10:6379"))
+		config.useSingleServer().setAddress(Context.getPropertyMandatory("RedisCacheAddress"))
 				.setConnectTimeout(1000).setTimeout(20000);
 		config.setCodec(new org.redisson.codec.SnappyCodec());
 

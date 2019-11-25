@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 
 import ch.pschatzmann.dates.DateRange;
 import ch.pschatzmann.stocks.accounting.HistoricValue;
@@ -43,7 +43,7 @@ public class StockData implements Serializable, IStockTarget, IStockData, IReset
 	private IStockID id;
 	private transient Comparator<IStockRecord> dateComparator;
 	private transient DateFormat df;
-	private transient TimeSeries timeSeries;
+	private transient BarSeries timeSeries;
 	private IReader reader = null;
 
 	public StockData() {
@@ -407,15 +407,15 @@ public class StockData implements Serializable, IStockTarget, IStockData, IReset
 		Context.getCache().clear();
 	}
 	
-	public TimeSeries toTimeSeries() {
+	public BarSeries toTimeSeries() {
 		return new StockTimeSeries(this);
 	}
 
-	public TimeSeries toTimeSeries(DateRange dateRange) {
+	public BarSeries toTimeSeries(DateRange dateRange) {
 		return new StockTimeSeries(this, dateRange);
 	}
 	
-	public TimeSeries toTimeSeries(Date date) {
+	public BarSeries toTimeSeries(Date date) {
 		return new StockTimeSeries(this, Context.getDateRanges(date).get(0));
 	}
 

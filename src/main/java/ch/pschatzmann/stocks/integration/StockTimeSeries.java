@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Objects;
 
 import org.ta4j.core.Bar;
-import org.ta4j.core.BaseTimeSeries;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BaseBarSeries;
+import org.ta4j.core.BarSeries;
 
 import ch.pschatzmann.dates.DateRange;
 import ch.pschatzmann.stocks.Context;
@@ -23,7 +23,7 @@ import ch.pschatzmann.stocks.IStockRecord;
  *
  */
 
-public class StockTimeSeries extends BaseTimeSeries implements TimeSeries, Serializable {
+public class StockTimeSeries extends BaseBarSeries implements BarSeries, Serializable {
 	private static final long serialVersionUID = 1L;
 
 	public StockTimeSeries(String ticker, List<Bar> ticks) {

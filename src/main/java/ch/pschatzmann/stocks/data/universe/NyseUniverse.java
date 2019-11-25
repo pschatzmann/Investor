@@ -8,6 +8,7 @@ import ch.pschatzmann.stocks.errors.UniverseException;
  * @author pschatzmann
  *
  */
+@Deprecated
 public class NyseUniverse extends NasdaqUniverse {
 
 	public NyseUniverse() throws UniverseException {

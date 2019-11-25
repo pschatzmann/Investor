@@ -34,7 +34,7 @@ public abstract class QuandlCommonUniverse implements IUniverse, Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOG = LoggerFactory.getLogger(QuandlCommonUniverse.class);
-	private static String apiKey = Context.getProperty("QuandlAPIKey", "8aywbdPpNDV3U2mVwkTD");
+	private static String apiKey = Context.getPropertyMandatory("QuandlAPIKey");
 	private static CacheAccess<String, List<IStockID>> cache;;
 	private String databaseCode;
 	private String synbolRegex = ".*";

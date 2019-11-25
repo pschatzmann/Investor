@@ -41,7 +41,7 @@ public class AlphaVantageReader extends HttpReader  {
 	}
 
 	protected Object getApiKey() {
-		return Context.getProperty("AlphaVantageAPIKey", "FVR0D4P12YX49UAU");
+		return Context.getPropertyMandatory("AlphaVantageAPIKey");
 	}
 
 	@Override

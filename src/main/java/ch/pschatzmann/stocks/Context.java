@@ -1,6 +1,8 @@
 package ch.pschatzmann.stocks;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
 import java.math.RoundingMode;
 import java.text.DateFormat;
@@ -26,7 +28,7 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.DoubleNum;
 import org.ta4j.core.num.Num;
 
@@ -40,6 +42,7 @@ import ch.pschatzmann.stocks.cache.ICache;
 import ch.pschatzmann.stocks.cache.JcsCache;
 import ch.pschatzmann.stocks.cache.RedisCache;
 import ch.pschatzmann.stocks.errors.DateException;
+import ch.pschatzmann.stocks.errors.UserException;
 import ch.pschatzmann.stocks.input.DefaultReader;
 import ch.pschatzmann.stocks.input.IReader;
 import ch.pschatzmann.stocks.input.IReaderEx;
@@ -69,7 +72,8 @@ public class Context implements Serializable {
 	private static boolean cachingActive = false;
 	private static ICache cache = setCache();
 	private static Function<Number, Num> function = DoubleNum::valueOf;
-	
+	private static Properties properties=null;
+
 
 	static {
 		numberFormat = NumberFormat.getInstance();
@@ -432,16 +436,63 @@ public class Context implements Serializable {
 			// system environment
 			str = System.getenv(name);
 		}
-		// investor.properties file
+		// get value from investor.properties 
+		if (properties!=null) {
+			str = properties.getProperty(name);
+			
+		}
+		
+		// re-load properties
 		if (str == null) {
-			Properties p;
 			try {
-				p = FileUtils.getProperties(new File("investor.properties"));
-				if (p != null) {
-					str = p.getProperty(name);
+				// investor.properties from file
+				properties = FileUtils.getProperties(new File("investor.properties"));
+				if (properties != null) {
+					str = properties.getProperty(name);
 				}
 			} catch (Exception e) {
+				LOG.debug("Could not load properties",e);
 			}
+			
+			// investor.properties from classpath
+			if (str==null) {
+				InputStream is=null; 
+				try {
+					properties = new Properties();
+					is = Context.class.getClassLoader().getResourceAsStream("investor.properties"); 
+					if (is!=null) {
+						properties.load(is);
+						str = properties.getProperty(name);
+					}
+				} catch (Exception e) {
+					LOG.error("Could not load properties",e);
+				} finally {
+					if (is!=null) {
+						try {
+							is.close();
+						} catch (IOException e) {
+						}
+					}
+				}
+			}
+		}
+		
+		
+		if (str==null) {
+			LOG.info("Please define the property: "+name);
+		}
+		return str;
+	}
+	
+	/**
+	 * Determines the value of a mandatory property
+	 * @param name
+	 * @return
+	 */
+	public static String getPropertyMandatory(String name) {
+		String str = getProperty(name);
+		if (str==null) {
+			LOG.error("Please define the property: "+name);
 		}
 		return str;
 	}
@@ -676,7 +727,7 @@ public class Context implements Serializable {
 	 * @return
 	 */
 	public static List<Date> getDates(Indicator indicator){
-		return getDates(indicator.getTimeSeries());
+		return getDates(indicator.getBarSeries());
 	}
 	
 	/**
@@ -684,7 +735,7 @@ public class Context implements Serializable {
 	 * @param ts
 	 * @return
 	 */
-	public static List<Date> getDates(TimeSeries ts){
+	public static List<Date> getDates(BarSeries ts){
 		return ts.getBarData().stream()
 			.map(bar -> toDate(bar.getBeginTime().toInstant()))
 			.collect(Collectors.toList());

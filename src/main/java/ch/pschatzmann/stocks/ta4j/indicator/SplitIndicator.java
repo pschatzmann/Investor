@@ -1,7 +1,7 @@
 package ch.pschatzmann.stocks.ta4j.indicator;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.stocks.Context;
@@ -15,18 +15,18 @@ import ch.pschatzmann.stocks.Context;
  */
 public class SplitIndicator implements IIndicator<Num>, Name{
 	private static final long serialVersionUID = 1L;
-	private TimeSeries timeSeries; // (String name, List<Bar> bars)
+	private BarSeries timeSeries; // (String name, List<Bar> bars)
 	private int start;
 	private Indicator<Num> indicator;
 	private String name;
 
 	public SplitIndicator(Indicator<Num> indicator, double rate, boolean head) {
-		this(indicator, (int) (indicator.getTimeSeries().getBarCount() * rate), head);
+		this(indicator, (int) (indicator.getBarSeries().getBarCount() * rate), head);
 	}
 
 	public SplitIndicator(Indicator<Num> indicator, int pos, boolean head) {
 		this.indicator = indicator;
-		timeSeries = getTimeSeries(indicator, pos, head);
+		timeSeries = getBarSeries(indicator, pos, head);
 		if (indicator instanceof Name) {
 			this.name = ((Name)indicator).getName();
 		} else {
@@ -34,8 +34,8 @@ public class SplitIndicator implements IIndicator<Num>, Name{
 		}
 	}
 	
-	protected TimeSeries getTimeSeries(Indicator<Num> indicator, int pos, boolean head) {
-		TimeSeries ts = indicator.getTimeSeries();
+	protected BarSeries getBarSeries(Indicator<Num> indicator, int pos, boolean head) {
+		BarSeries ts = indicator.getBarSeries();
 		int end;
 		if (head) {
 			start = 0;
@@ -53,7 +53,7 @@ public class SplitIndicator implements IIndicator<Num>, Name{
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
+	public BarSeries getBarSeries() {
 		return timeSeries;
 	}
 

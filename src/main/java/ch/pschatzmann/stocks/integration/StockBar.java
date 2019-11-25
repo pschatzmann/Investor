@@ -94,12 +94,12 @@ public class StockBar implements Bar, Serializable {
 	}
 
 	@Override
-	public Num getMinPrice() {
+	public Num getLowPrice() {
 		return this.minPrice;
 	}
 
 	@Override
-	public Num getMaxPrice() {
+	public Num getHighPrice() {
 		return this.maxPrice;
 	}
 

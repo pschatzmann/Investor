@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.stocks.Context;
@@ -31,14 +31,14 @@ public class DayOfMonthIndicator implements Indicator<Num>, Name, IIndicator<Num
 
 	@Override
 	public Num getValue(int index) {
-		Instant inst = getTimeSeries().getBar(index).getBeginTime().toInstant();
+		Instant inst = getBarSeries().getBar(index).getBeginTime().toInstant();
 		LocalDateTime ldt = LocalDateTime.ofInstant(inst, ZoneId.systemDefault());
 		return numOf(ldt.getDayOfMonth());
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
-		return indicator.getTimeSeries();
+	public BarSeries getBarSeries() {
+		return indicator.getBarSeries();
 	}
 
 	@Override

@@ -9,7 +9,7 @@ import ch.pschatzmann.stocks.input.QuandlWIKIReader;
  * @author pschatzmann
  *
  */
-
+@Deprecated
 public class QuandlWIKIUniverse extends QuandlCommonUniverse {
 	/**
 	 * 

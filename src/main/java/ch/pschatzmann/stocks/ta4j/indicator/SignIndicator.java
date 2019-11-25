@@ -1,7 +1,7 @@
 package ch.pschatzmann.stocks.ta4j.indicator;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.stocks.Context;
@@ -40,8 +40,8 @@ public class SignIndicator implements IIndicator<Num>, Category {
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
-		return indicator.getTimeSeries();
+	public BarSeries getBarSeries() {
+		return indicator.getBarSeries();
 	}
 
 	@Override

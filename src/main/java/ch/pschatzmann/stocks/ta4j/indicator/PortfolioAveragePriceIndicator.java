@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import org.ta4j.core.Bar;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.indicators.CachedIndicator;
 import org.ta4j.core.num.Num;
 
@@ -18,14 +18,14 @@ public class PortfolioAveragePriceIndicator extends CachedIndicator<Num>  implem
 	private IAccount account;
 	private StockID id;
 	
-	public PortfolioAveragePriceIndicator(TimeSeries series, IAccount account, StockID id) {
+	public PortfolioAveragePriceIndicator(BarSeries series, IAccount account, StockID id) {
 		super(series);
 		this.account = account;
 	}
 
 	@Override
 	protected Num calculate(int index) {
-		Bar tick = this.getTimeSeries().getBar(index);
+		Bar tick = this.getBarSeries().getBar(index);
 		Date date = Date.from(tick.getBeginTime().toInstant());
 		Portfolio p = account.getPortfolio(date);
 		if (p!=null) {

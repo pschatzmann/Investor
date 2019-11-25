@@ -24,14 +24,14 @@ public class AbsoluteChangeIndicator extends CachedIndicator<Num> implements IIn
 	}
 
 	public AbsoluteChangeIndicator(Indicator<Num> originalValues, Indicator<Num> newValues) {
-		super(newValues.getTimeSeries());
+		super(newValues.getBarSeries());
 		this.prices = originalValues;
 		this.prices1 = newValues;
 		this.na = prices.numOf(Double.NaN);
 	}
 
 	public AbsoluteChangeIndicator(Indicator<Num> prices, Num defaultNA) {
-		super(prices.getTimeSeries());
+		super(prices.getBarSeries());
 		this.prices = prices;
 		this.na = defaultNA;
 	}
@@ -40,7 +40,7 @@ public class AbsoluteChangeIndicator extends CachedIndicator<Num> implements IIn
 	protected Num calculate(int index) {
 		try {
 			if (prices1 == null) {
-				if (index >= 1 && index <= prices.getTimeSeries().getBarCount()) {
+				if (index >= 1 && index <= prices.getBarSeries().getBarCount()) {
 					// calculate the difference to the prior period
 					Double value0 = prices.getValue(index - 1).doubleValue();
 					Double value = prices.getValue(index).doubleValue();

@@ -6,7 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ta4j.core.Strategy;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.stocks.Context;
@@ -29,7 +29,7 @@ public abstract class CommonTradingStrategy implements IOptimizableTradingStrate
 	private IStockData stockData;
 	private State state = new State();
 	private Strategy strategy = null;
-	private TimeSeries ts;
+	private BarSeries ts;
 	private List<InputParameterName> parameterOptimizationSequence;
 
 	/**
@@ -45,14 +45,14 @@ public abstract class CommonTradingStrategy implements IOptimizableTradingStrate
 	public Strategy getStrategy() {
 		if (strategy == null) {
 			LOG.info("buildStrategy {}",this);
-			strategy = buildStrategy(this.getTimeSeries());
+			strategy = buildStrategy(this.getBarSeries());
 		}
 		return strategy;
 	}
 
-	abstract public Strategy buildStrategy(TimeSeries timeSeries) ;
+	abstract public Strategy buildStrategy(BarSeries timeSeries) ;
 
-	protected TimeSeries getTimeSeries() {
+	protected BarSeries getBarSeries() {
 		if (ts==null) {
 			ts = new StockTimeSeries(this.getStockData());
 		}

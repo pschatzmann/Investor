@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 /**
@@ -19,15 +19,15 @@ public class ValuesFromPercentDifferenceIndicator implements IIndicator<Num> {
 	 */
 	private static final long serialVersionUID = 1L;
 	private List<Num> result;
-	private TimeSeries timeSeries;
+	private BarSeries timeSeries;
 	
 	
 	public ValuesFromPercentDifferenceIndicator(Num startValue, Indicator<Num> differences) {
-		timeSeries = differences.getTimeSeries();
+		timeSeries = differences.getBarSeries();
 		result = new ArrayList();
 		Num value = startValue;
 		result.add(value);
-		for (int i=0;i<differences.getTimeSeries().getBarCount();i++) {
+		for (int i=0;i<differences.getBarSeries().getBarCount();i++) {
 			value.plus(numOf(value.doubleValue() * differences.getValue(i).doubleValue()));
 			result.add(numOf(value.doubleValue()));
 		}
@@ -39,7 +39,7 @@ public class ValuesFromPercentDifferenceIndicator implements IIndicator<Num> {
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
+	public BarSeries getBarSeries() {
 		return timeSeries;
 	}
 

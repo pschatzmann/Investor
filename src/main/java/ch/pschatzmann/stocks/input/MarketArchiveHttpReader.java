@@ -34,7 +34,7 @@ public class MarketArchiveHttpReader extends HttpReader implements Serializable 
 
 	@Override
 	protected String getPrefix(IStockID id) {
-		return Context.getProperty("MarketArchiveURL","https://pschatzmann.ch")+"/stocks-data/"+id.getExchange()+"/"+id.getTicker()+".csv";
+		return Context.getPropertyMandatory("MarketArchiveURL")+"/stocks-data/"+id.getExchange()+"/"+id.getTicker()+".csv";
 	}
 	
 	protected String getSuffix(IStockID id) {

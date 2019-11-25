@@ -5,7 +5,7 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.Trade;
 import org.ta4j.core.TradingRecord;
 import org.ta4j.core.analysis.criteria.AbstractAnalysisCriterion;
@@ -38,7 +38,7 @@ public class SharpeRatioCriterion extends AbstractAnalysisCriterion implements S
 	}
 
 	@Override
-	public Num calculate(TimeSeries series, TradingRecord tradingRecord) {
+	public Num calculate(BarSeries series, TradingRecord tradingRecord) {
 		for (Trade trade : tradingRecord.getTrades()) {
 			ZonedDateTime date = series.getBar(trade.getEntry().getIndex()).getEndTime();
 			returns.add(new HistoricValue(date, calculateProfit(series, trade) - riskFreeReturnPerDay));
@@ -47,7 +47,7 @@ public class SharpeRatioCriterion extends AbstractAnalysisCriterion implements S
 	}
 
 	@Override
-	public Num calculate(TimeSeries series, Trade trade) {
+	public Num calculate(BarSeries series, Trade trade) {
 		return Context.number(calculateProfit(series, trade));
 	}
 
@@ -65,7 +65,7 @@ public class SharpeRatioCriterion extends AbstractAnalysisCriterion implements S
 	 *            a trade
 	 * @return the profit of the trade
 	 */
-	private double calculateProfit(TimeSeries series, Trade trade) {
+	private double calculateProfit(BarSeries series, Trade trade) {
 		Num profit = Context.number(0.0);
 		if (trade.isClosed()) {
 			Num exitClosePrice = series.getBar(trade.getExit().getIndex()).getClosePrice();

@@ -41,7 +41,7 @@ public class TestStockIndicators {
 		BollingerBandsLowerIndicator lowBBand = new BollingerBandsLowerIndicator(middleBBand, sd);
 		BollingerBandsUpperIndicator upBBand = new BollingerBandsUpperIndicator(middleBBand, sd);
 
-		for (int i = lowBBand.getTimeSeries().getBeginIndex(); i < lowBBand.getTimeSeries().getEndIndex(); i++) {
+		for (int i = lowBBand.getBarSeries().getBeginIndex(); i < lowBBand.getBarSeries().getEndIndex(); i++) {
 			System.out.println();
 			System.out.print(Context.getValue(lowBBand, i)+" ");
 			System.out.print(Context.getValue(middleBBand, i)+ " ");
@@ -64,7 +64,7 @@ public class TestStockIndicators {
 		BollingerBandsUpperIndicator upBBand = new BollingerBandsUpperIndicator(middleBBand, sd);
 
 
-		for (int i = lowBBand.getTimeSeries().getBeginIndex(); i < lowBBand.getTimeSeries().getEndIndex(); i++) {
+		for (int i = lowBBand.getBarSeries().getBeginIndex(); i < lowBBand.getBarSeries().getEndIndex(); i++) {
 			System.out.println();
 			System.out.print(Context.getValue(lowBBand, i)+" ");
 			System.out.print(Context.getValue(middleBBand, i)+" ");

@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.util.Date;
 import java.util.List;
 
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 
 import ch.pschatzmann.dates.DateRange;
 import ch.pschatzmann.stocks.StockData.DateMatching;
@@ -99,7 +99,7 @@ public interface IStockData {
 	 * @return
 	 */
 
-	public TimeSeries toTimeSeries();
+	public BarSeries toTimeSeries();
 
 	/**
 	 * Converts the StockData to a TimeSeries
@@ -107,14 +107,14 @@ public interface IStockData {
 	 * @param dateRange
 	 * @return
 	 */
-	public TimeSeries toTimeSeries(DateRange dateRange);
+	public BarSeries toTimeSeries(DateRange dateRange);
 
 	/**
 	 * Converts the StockData to a TimeSeries
 	 * @param startDate
 	 * @return
 	 */
-	public TimeSeries toTimeSeries(Date startDate);
+	public BarSeries toTimeSeries(Date startDate);
 	
 	/**
 	 * Provides the data as CSV string

@@ -100,7 +100,7 @@ public class TestStocks {
 	@Test
 	public void testFilterDates() throws Exception {
 		LOG.info("testFilterDates");
-		StockData sd = new StockData(new StockID("AAPL", "NASDAQ"),new MarketArchiveHttpReader()).filterDates(new DateRange(1,Calendar.YEAR));
+		StockData sd = new StockData(new StockID("AAPL", "NASDAQ"),new MarketArchiveHttpReader()).filterDates(new DateRange(2,Calendar.YEAR));
 		List<IStockRecord> result = sd.getHistory();
 		LOG.info("size: "+result.size());
 		Assert.assertFalse(result.isEmpty());
@@ -110,7 +110,7 @@ public class TestStocks {
 	@Test
 	public void testCSV() throws Exception {
 		LOG.info("testFilterDates");
-		StockData sd = new StockData(new StockID("AAPL", "NASDAQ"),new MarketArchiveHttpReader()).filterDates(new DateRange(1,Calendar.YEAR));
+		StockData sd = new StockData(new StockID("AAPL", "NASDAQ"),new MarketArchiveHttpReader());
 		List<String> csv = sd.csvList();
 		LOG.info("csv: "+csv);
 		Assert.assertFalse(csv.isEmpty());

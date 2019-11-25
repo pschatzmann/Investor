@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.ta4j.core.Bar;
-import org.ta4j.core.BaseTimeSeries;
-import org.ta4j.core.BaseTimeSeries.SeriesBuilder;
+import org.ta4j.core.BaseBarSeries;
 import org.ta4j.core.Indicator;
-import org.ta4j.core.TimeSeries;
+import org.ta4j.core.BarSeries;
 import org.ta4j.core.num.Num;
 
 import ch.pschatzmann.dates.CalendarUtils;
@@ -30,7 +29,7 @@ public class IndicatorFromData implements Name, IIndicator<Num> {
 	private static final long serialVersionUID = 1L;
 	private List<Number> values;
 	private List<Date> dates;
-	private TimeSeries timeSeries;
+	private BarSeries timeSeries;
 	private String name;
 
 	public IndicatorFromData(String name, List<IHistoricValue> values) {
@@ -44,10 +43,10 @@ public class IndicatorFromData implements Name, IIndicator<Num> {
 	public IndicatorFromData(String name, List<Date> dates, List<Number> values) {
 		this.values = values;
 		this.name = name;
-		this.timeSeries = getTimeSeries(name, dates, values);
+		this.timeSeries = getBarSeries(name, dates, values);
 	}
 
-	protected TimeSeries getTimeSeries(String name, List<Date> inDates, List<Number> values) {
+	protected BarSeries getBarSeries(String name, List<Date> inDates, List<Number> values) {
 		this.dates = new ArrayList(inDates);
 		// if we have too many dates we allign them with the values by removing the leading dates
 		while(this.dates.size()>values.size()) {
@@ -77,7 +76,7 @@ public class IndicatorFromData implements Name, IIndicator<Num> {
 	}
 
 	@Override
-	public TimeSeries getTimeSeries() {
+	public BarSeries getBarSeries() {
 		return timeSeries;
 	}
 
