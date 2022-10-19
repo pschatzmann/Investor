@@ -8,7 +8,7 @@
 
 	<properties>
 		<!-- Use the latest version whenever possible. -->
-		<version.jackson>2.12.1</version.jackson>
+		<version.jackson>2.13.4.1</version.jackson>
 		<version.slf4j>RELEASE</version.slf4j>
 	</properties>
 
